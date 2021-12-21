@@ -1,5 +1,7 @@
 const MainPage = require('./MainPage');
+const SearchResultPage = require('./SearchResultPage');
 
 module.exports = {
-    mainPage: new MainPage()
+    mainPage: new MainPage(),
+    searchResultPage: new SearchResultPage() 
 }
