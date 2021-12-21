@@ -1,0 +1,20 @@
+{
+    "name": "webdriverio-tests",
+    "version": "0.1.0",
+    "private": true,
+    "devDependencies": {
+        "@rpii/wdio-html-reporter": "^7.7.1",
+        "@wdio/cli": "^7.16.12",
+        "@wdio/cucumber-framework": "^7.16.12",
+        "@wdio/devtools-service": "^7.16.12",
+        "@wdio/local-runner": "^7.16.12",
+        "wdio-cucumberjs-json-reporter": "^4.1.4"
+    },
+    "scripts": {
+        "test": "wdio run wdio.conf.js"
+    },
+    "dependencies": {
+        "chai": "^4.3.4",
+        "vue-cucumber-html-reporter": "^0.2.2"
+    }
+}
