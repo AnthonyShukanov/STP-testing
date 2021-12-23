@@ -1,7 +1,12 @@
 const Page = require('./page');
 
 class SearchResultPage extends Page {
-    resultHeaders = $('')
+    nothingFound = $('div.gs-snippet')
+    
+    get resultTitles() {
+        return $$('div.gs-title:not(.gsc-thumbnail-left) > a:not([data-attr])')
+    }
+
 }
 
 module.exports = SearchResultPage;
