@@ -12,11 +12,6 @@ class SearchResultPage extends Page {
         await this.nothingFound.waitForDisplayed()
     }
 
-    async checkRobotButton() {
-        if(this.notRobotButton.isDisplayed) {
-            this.notRobotButton.click()
-        } 
-    }
 
 }
 

@@ -10,7 +10,6 @@ Then(/^Результатов поиска должно быть "(\d+)"$/, asyn
 })
 
 Then(/^Должен видеть результат: Ничего не найдено$/, async () => {
-    await searchResultPage.checkRobotButton()
     await searchResultPage.checkForVisibility() 
 })
 
