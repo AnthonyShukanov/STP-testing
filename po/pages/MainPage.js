@@ -1,16 +1,16 @@
-const Page = require('./page');
+const Page = require('../page');
+
 class MainPage extends Page {
-    get searchField() { return $('input.search_input')}
-    
+    searchField = $("input.search_input")
+
     async open(path) {
         await browser.url(path)
     }
-
     async typeToSearchField(text) {
         await this.searchField.setValue(text);
     }
-
-    async 
-
+    async clickEnterButton() {
+        await browser.keys('Enter')
+    }
 }
 module.exports = MainPage;
